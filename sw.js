@@ -1,5 +1,5 @@
 // 兽魂 iPhone/iPad 离线版: 第一次打开时把整个游戏存进手机，之后优先用本机缓存(断网也能玩)
-const CACHE = 'beastsoul-d12456d747';
+const CACHE = 'beastsoul-fe8e6d6bf9';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon.png', './icon-512.png'];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
